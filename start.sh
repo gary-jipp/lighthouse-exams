@@ -14,7 +14,7 @@ if [ $count -gt 0 ];  then
 fi
 
 unset count
-podman pull ghcr.io/gary-jipp/student-exam:demo
+podman pull ghcr.io/gary-jipp/student-exam:latest
 cd answers
 podman run --replace --rm -d -v .:/app/answers --name student-exam student-exam
 

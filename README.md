@@ -1,5 +1,4 @@
 # Assessment Exams
-Note: This image currently runs assessment exams in "demo" mode which means it generates a random STUDENT ID.  When starting an exam you must specify which exam you would like to download.  eg: `web-01`, `web-02d`, etc
 
 ## Getting Started
 
@@ -17,16 +16,12 @@ The example below is for running Web #1.  You will change the directory name for
 ```terminal
 mkdir exams
 cd exams
-git clone <repo url> exam1
+git clone git@github.com:gary-jipp/lighthouse-exams.git exam1
 cd exam1
 ```
 
 ----
 ### 2)  Start the Exam
-Specify the exam that you want to start.
-
-For demo-mode exams: `web-01`, `web02d`, `web-03gg`, `web-04yo`, `web-05sh`, `web-06-rb`
-
 The container will create the answer files for this exam in the `./answers` directoty
 
 ```terminal
@@ -35,8 +30,8 @@ The container will create the answer files for this exam in the `./answers` dire
 
 ----
 ### 5)  Edit and Run the Questions
-Edit the .js files and run the questions
+Edit the files in `answers` and run the questions
 
 ```terminal
-./question.sh 1
+./question.sh [QUESTION NUMBER]
 ```
