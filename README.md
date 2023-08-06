@@ -17,7 +17,7 @@ The example below is for running Web #1.  You will change the directory name for
 ```terminal
 mkdir exams
 cd exams
-git clone <repo url> exam1
+git clone git@github.com:gary-jipp/lighthouse-exams.git exam1
 cd exam1
 ```
 
@@ -35,8 +35,8 @@ The container will create the answer files for this exam in the `./answers` dire
 
 ----
 ### 5)  Edit and Run the Questions
-Edit the .js files and run the questions
+Edit the files in `answers` and run the questions
 
 ```terminal
-./question.sh 1
+./question.sh [QUESTION NUMBER]
 ```
