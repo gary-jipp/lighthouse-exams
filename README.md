@@ -27,7 +27,7 @@ Specify the exam that you want to start.
 
 For demo-mode exams: `web-01`, `web02d`, `web-03gg`, `web-04yo`, `web-05sh`, `web-06-rb`
 
-The container will create the answer files for this exam in the `./answers` directoty
+The container will create the answer files for this exam in the `./answers` directory
 
 ```terminal
 ./start.sh [YOUR EXAM CODE]
