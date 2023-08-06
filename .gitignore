@@ -1,0 +1,5 @@
+node_modules/
+npm-debug.log*
+.exam-data
+answers/*.js
+answers/*.sql
