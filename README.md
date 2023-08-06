@@ -22,7 +22,7 @@ cd exam1
 
 ----
 ### 2)  Start the Exam
-The container will create the answer files for this exam in the `./answers` directoty
+The container will create the answer files for this exam in the `./answers` directory
 
 ```terminal
 ./start.sh [YOUR EXAM CODE]
