@@ -34,7 +34,7 @@ if [ $count -gt 0 ];  then
 fi
 
 unset count
-$chost pull ghcr.io/gary-jipp/student-exam:latest
+$chost pull ghcr.io/gary-jipp/student-exam:demo
 cd answers
 $chost run --replace --rm -d -v .:/app/answers --name student-exam student-exam
 
