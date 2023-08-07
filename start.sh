@@ -1,5 +1,25 @@
 #! /bin/sh
 
+pstatus=`which podman`
+if [ ! -z $pstatus ] ;then
+  chost='podman'
+fi
+
+if [ ! $chost ] ; then
+  dstatus=`which docker`
+  if [ ! -z $dstatus ] ;then
+    chost='docker'
+  fi
+fi
+
+if [ ! $chost ] ; then
+  echo 'No Container host installed'
+  echo 'Please install podman or docker and try again'
+  exit
+fi
+
+echo "Using $chost:"
+
 if [ ! -d "./answers" ];  then
   echo "Unable to find ./answers."
   echo  "Did you forget to cd into the cloned dir?"
@@ -14,8 +34,8 @@ if [ $count -gt 0 ];  then
 fi
 
 unset count
-podman pull ghcr.io/gary-jipp/student-exam:demo
+$chost pull ghcr.io/gary-jipp/student-exam:latest
 cd answers
-podman run --replace --rm -d -v .:/app/answers --name student-exam student-exam
+$chost run --replace --rm -d -v .:/app/answers --name student-exam student-exam
 
-podman exec -it student-exam start $1
+$chost exec -it student-exam start $1

@@ -1,5 +1,4 @@
 # Assessment Exams
-Note: This image currently runs assessment exams in "demo" mode which means it generates a random STUDENT ID.  When starting an exam you must specify which exam you would like to download.  eg: `web-01`, `web-02d`, etc
 
 ## Getting Started
 
